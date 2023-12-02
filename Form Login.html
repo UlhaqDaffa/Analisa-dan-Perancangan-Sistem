@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Login</title>
+        <link rel="stylesheet" type="text/css" href="style-login.css">
+        <link rel=" shortcut icon" href="ASET/s.png" type="img/x-icon">
+    </head>
+    <body>
+            <div class="login">
+                <h1>LOGIN ADMIN</h1>
+                <img src="Chef-cuate.svg">
+                
+                <form action="menu.html">
+
+                    <div class="form-input">
+                        <input type="text" id="username" required>
+                        <span></span>
+                        <label><b>Username</b></label>
+                    </div>
+
+                    <div class="form-input">
+                        <input type="password" id="password" required>
+                        <span></span>
+                        <label><b>Password</b></label>
+                    </div>
+                    <input type="submit" name="login" value="LOGIN" onclick="Login()">
+                </form>
+            </div>
+
+            <script language="JavaScript">
+                function Login(){ 
+                    var user = document.getElementById("username").value;
+                    var pass = document.getElementById("password").value;
+        
+                    if (user=="admin" && pass=="123"){
+                        alert("Selamat anda berhasil login");
+                    }else{
+                        alert("Username dan password anda salah!");
+                    }
+                }
+            </script>
+</body>
+</html>

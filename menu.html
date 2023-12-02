@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel=" shortcut icon" href="ASET/s.png" type="img/x-icon">
+    
+    
+    <title>Dapoer Bu Chici - Menu</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <h1>Dapoer Bu Chici</h1>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Form Login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!--Hero--> 
+    <section class="hero-container" id="home">
+        <div>
+            <div>
+                <h1>Menu Yang Tersedia</h1>
+                <p>Menu - menu yang tersedia disini sudah pasti fresh dan hangat</p>
+                <hr><br>
+                <p><a href="#menu" class="tbl-mulai">LIHAT YUK ADA APA AJA</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!--KARTU ISI-->
+    <section class="judul-tengah" id="menu">
+        <div>
+            <h2>Makanan</h2>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <div class="card">
+            <img src="ASET/ayamgeyek.png" alt="">
+            <div class="card-body">
+                <h3>Ayam Geprek</h3>
+                <p style="color: #5A5A5A;">Ayam Krispi + Nasi + Lalapan + Sambal</p>
+                <h4 class="harga">RP 18.000</h4><button onclick="addToOrder('item1')">Tambah</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ASET/ayambayar.png" alt="">
+            <div class="card-body">
+                <h3>Ayam Bakar</h3>
+                <p style="color: #5A5A5A;">Ayam Bakar + Nasi + Lalapan + Sambal</p>
+                <h4 class="harga">RP 20.000</h4><button onclick="addToOrder('item2')">Tambah</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ASET/ayamgoyeng.png" alt="">
+            <div class="card-body">
+                <h3>Ayam Goreng</h3>
+                <p style="color: #5A5A5A;">Ayam Goreng + Nasi + Lalapan + Sambal</p>
+                <h4 class="harga">RP 18.000</h4><button onclick="addToOrder('item3')">Tambah</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ASET/sebyak.png" alt="">
+            <div class="card-body">
+                <h3>Seblak</h3>
+                <p style="color: #5A5A5A;">Kerupuk + Sosis + Telur + Sayuran + Makaroni</p>
+                <h4 class="harga">RP 18.000</h4><button onclick="addToOrder('item4')">Tambah</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ASET/kwetiyauyau.png" alt="">
+            <div class="card-body">
+                <h3>Kwetiau Goreng</h3>
+                <p style="color: #5A5A5A;">Kwetiau + Telur + Sayuran </p>
+                <h4 class="harga">RP 20.000</h4><button onclick="addToOrder('item5')">Tambah</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ASET/dimsumbabi.png" alt="">
+            <div class="card-body">
+                <h3>Dimsum</h3>
+                <p style="color: #5A5A5A;">Dimsum Ayam Isi 4</p>
+                <h4 class="harga">RP 12.000</h4><button onclick="addToOrder('item6')">Tambah</button>
+            </div>
+        </div>
+        . 
+    <section class="judul-tengah">
+        <div>
+            <h2>Minuman</h2>
+        </div>
+    </section>
+
+    <br><br>
+    <div class="card">
+        <img src="ASET/es teh.jpg" alt="">
+        <div class="card-body">
+            <h3>Es Teh Manis</h3>
+            <p style="color: #5A5A5A;">Es + Teh</p>
+            <h4 class="harga">RP 7.000</h4><button onclick="addToOrder('item7')">Tambah</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="ASET/jus.jpg" alt="">
+        <div class="card-body">
+            <h3>Jus Jeruk </h3>
+            <p style="color: #5A5A5A;">Es + Jus Jeruk</p>
+            <h4 class="harga">RP 10.000</h4><button onclick="addToOrder('item8')">Tambah</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="ASET/kopi.jpg" alt="">
+        <div class="card-body">
+            <h3>Kopi Hitam</h3>
+            <p style="color: #5A5A5A;">Panas / Dingin</p>
+            <h4 class="harga">RP 5.000/7.000</h4><button onclick="addToOrder('item9')">Tambah</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Transaksi -->
+    <section>
+        <div class="transaksi">
+            <h1>Transaksi</h1>
+            <hr><br>
+            <div class="id-pesanan">
+                <p>Nama    : </p>
+                <p>NIK/NIM : </p>
+                <p>No.Telp : </p><br>
+            </div>
+
+            <div class="id-pesanan">
+                <p>Pesanan</p>
+                <ol type="1.">
+                    <li>-</li>
+                    <li>-</li>
+                </ol><br>
+            </div>
+
+            <div class="id-pesanan">
+                <p>Total Bayar</p>
+                <p>RP - </p><br>
+            </div>
+        </div>
+
+        <section class="payment">
+            <p>Metode Pembayaran</p>
+            <button>Gopay</button>
+            <button>Ovo</button>
+            <button>Dana</button>
+        </section>
+    
+        <section class="total-amount">
+            <p>Total Pembayaran</p>
+            <p>Total yang harus dibayar: Rp <span id="total">0</span></p>
+        </section>
+    
+        <section class="payment-actions">
+            <button onclick="processPayment()">Bayar</button>
+            <button onclick="cancelOrder()">Batal Pesanan</button>
+        </section>
+    </section>
+    
+
+    <!-- JS -->
+    <script>
+        const orderedItems = {};
+
+        function addToOrder(itemId) {
+            if (orderedItems[itemId]) {
+                orderedItems[itemId]++;
+            } else {
+                orderedItems[itemId] = 1;
+            }
+
+            const orderList = document.getElementById('orderList');
+            const itemElement = document.getElementById(itemId);
+            const itemName = itemElement.textContent.split(' - ')[0];
+            const itemQuantity = orderedItems[itemId];
+
+            const existingItem = orderList.querySelector(`li[data-item="${itemId}"]`);
+            if (existingItem) {
+                existingItem.textContent = `${itemName} - Rp ${itemElement.textContent.split(' - ')[1]} (x${itemQuantity})`;
+            } else {
+                const li = document.createElement('li');
+                li.textContent = `${itemName} - Rp ${itemElement.textContent.split(' - ')[1]} (x${itemQuantity})`;
+                li.setAttribute('data-item', itemId);
+                orderList.appendChild(li);
+            }
+
+            updateTotal();
+        }
+
+        function updateTotal() {
+            const item1Price = 18000; // Harga Ayam Geprek
+            const item2Price = 20000;
+            const item3Price = 18000;
+            const item4Price = 18000;
+            const item5Price = 20000;
+            const item6Price = 12000;
+            const item7Price = 7000;
+            const item8Price = 10000;
+            const item9Price = 7000;
+
+            let total = 0;
+            for (const itemId in orderedItems) {
+                if (itemId === 'item1') {
+                    total += item1Price * orderedItems[itemId];
+                } else if (itemId === 'item2') {
+                    total += item2Price * orderedItems[itemId];
+                } else if (itemId === 'item3') {
+                    total += item3Price * orderedItems[itemId];
+                } else if (itemId === 'item4') {
+                    total += item4Price * orderedItems[itemId];
+                } else if (itemId === 'item5') {
+                    total += item5Price * orderedItems[itemId];
+                } else if (itemId === 'item6') {
+                    total += item6Price * orderedItems[itemId];
+                } else if (itemId === 'item7') {
+                    total += item7Price * orderedItems[itemId];
+                } else if (itemId === 'item8') {
+                    total += item8Price * orderedItems[itemId];
+                } else if (itemId === 'item9') {
+                    total += item9Price * orderedItems[itemId];
+                } 
+            }
+
+            const totalElement = document.getElementById('total');
+            totalElement.textContent = total;
+
+            function processPayment() {
+                alert('Pembayaran berhasil!');
+                orderedItems = {};
+                document.getElementById('orderList').innerHTML = '';
+                updateTotal();
+            }
+
+            function cancelOrder() {
+                alert('Pesanan berhasil dibatalkan.');
+                orderedItems = {};
+                document.getElementById('orderList').innerHTML = '';
+                updateTotal();
+            }
+        }
+    </script>
+
+     <!--FOOTER-->
+     <footer class="footer-final">
+        <p><b>Dapoer Bu Chici</b> 2023 &copy; all right reserved</p>
+        <div>
+            <img src="ASET/ig.svg" alt="Instagram">
+            <img src="ASET/wa.svg" alt="Whatsapp">
+    </footer>
+</body> 
+</html>

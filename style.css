@@ -1,0 +1,322 @@
+:root {
+    --primary-color: #ff7eac;
+    --secondary-color: #4caf50; 
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*BAGIAN NAVBAR*/
+.navbar{
+    background: #ffff;
+    height: 75px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+}
+
+.navbar > h1{
+    font-size: 38px;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+ }
+
+ nav ul li {
+    float: left;
+ }
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+ }
+ 
+ nav ul li a {
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+ }
+ 
+ .tbl-hijau-masuk{
+    color: var(--primary-color);
+ }
+
+ a.tbl-hijau-masuk:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+ }
+
+ /*BAGIAN HERO*/
+.hero-container{
+    background: #ffff;
+    height: 500px;
+    margin-left: 33%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.hero-container hr {
+    border-top: solid 3px var(--primary-color);
+}
+
+.hero-container > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hero-container p{
+    font-size: 16px;
+    color: #5A5A5A;
+}
+.hero-container h1{
+    font-size: 56px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+.hero-container > img{
+    width: 50%;
+    height: 600px;
+    align-self: center;
+}
+
+a.tbl-mulai{
+    background: var(--primary-color);
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    color: #ffffff;
+    cursor: pointer; 
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ a.tbl-mulai:hover{
+    background: #252525;
+    transition: 0.3s ease;   
+ }
+
+
+ /*KARTU ISI*/
+ .judul-tengah{
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    color: var(--primary-color);
+ }
+
+ .judul-tengah p{
+    color: #5A5A5A;
+ }
+
+.content-container{
+    min-height: 400px;
+    margin: 50px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    color: var(--primary-color);
+}
+
+.content-container .card{
+    height: 100%;
+    min-height: 600px;
+}
+
+.content-container button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.content-container button:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+}
+
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(1, 1, 1,0.2);
+}
+
+.card > img{
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 310px;
+    width: 100%;
+}
+
+.card > .card-body{
+    padding: 20px;   
+}
+
+.card h3{
+    font-size: 20px;
+    margin: 0 15px 0 0;
+}
+
+/*CUSTOMER*/
+.judul-customer-say{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px 0;
+}
+
+.customer-content-container{
+    min-height: 400px;
+    margin: 50px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.customer-content-container .card{
+    height: 100%;
+}
+
+.card-all{
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(1, 1, 1,0.2);
+}
+
+.card-all > img{
+    object-fit: cover;
+    height: 210px;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-all > .card-customer{
+    padding: 20px;   
+}
+
+.card-all h3{
+    font-size: 20px;
+    margin: 0 15px 0 0;
+}
+
+.card-customer > div{
+    color: yellow;
+    font-size: 24px;
+}
+
+/* TRANSAKSI */
+.transaksi h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+.transaksi hr {
+    border-top: solid 3px var(--primary-color);
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+
+.payment-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.payment button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 70px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+    margin-left: 20%;
+}
+
+.payment-actions button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+.payment-actions button:hover {
+    background-color: #45a049;
+}
+
+.payment p {
+    font-size: 18px;
+    margin-left: 20%;
+    text-decoration: none;
+}
+
+.total-amount {
+    font-size: 18px;
+    margin-left: 20%;
+    text-decoration: none;
+}
+
+.transaksi .id-pesanan {
+    font-size: 18px;
+    margin-left: 20%;
+}
+
+
+/*FOOTER*/
+.footer-final{
+    margin-top: 100px;
+    height: 80px;
+    display: flex;  
+    padding: 0 10%;
+    align-items:center;
+    justify-content: space-between;
+    background: #e2e2e2;
+}
+
+footer > div{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
